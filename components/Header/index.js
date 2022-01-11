@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Header.module.css'
 import Link from 'next/link'
 const Header = () => {
@@ -13,8 +12,7 @@ const Header = () => {
                     <Link href="/"><a className={styles.item}>Наши услуги</a></Link>
                     <Link href="/"><a className={styles.item}>Цены</a></Link>
                     <Link href="/"><a className={styles.item}> Контакты</a></Link>
-                    <Link href="/"> <a className={styles.item}>Наши работы</a></Link>
-
+                    <Link href="/"><a className={styles.item}>Наши работы</a></Link>
                 </div>
             </div>
         </div>
