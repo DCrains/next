@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+}
+
+.nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.leftbar1{
+
+font-family: "Oswald";
+font-style: normal;
+font-weight: normal;
+font-size: 27px;
+line-height: 40px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+  }
+  .leftbar2{
+
+    
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+  }
+
+  .ebuch{
+    margin-left: 15% ;
+    align-self: center;
+     margin-right: 25% ;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+  }
+.item{
+ padding:15px;
+}
+@media screen and (max-width: 376px) {
+
+.leftbar{
+  
+  width: 50%;
+  
+}
+.leftbar2{
+  font-size: 20px;
+}
+.leftbar1{
+  font-size: 20px;
+}
+.ebuch{
+  margin-right: 4%;
+  align-self: flex-end;
+  font-size: 20px;
+  width: 21%;
+  flex-direction: column;
+}
+.item{
+  padding: 2px;
+  display: inline-flex;
+}
+
+}
