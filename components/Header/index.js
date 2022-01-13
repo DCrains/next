@@ -9,10 +9,7 @@ const Header = () => {
                     <p className={styles.leftbar2}>ПН-ВС 10:00 - 20:00 </p>
                 </div>
                 <div className={styles.ebuch}>
-                    <Link href="/"><a className={styles.item}>Наши услуги</a></Link>
-                    <Link href="/"><a className={styles.item}>Цены</a></Link>
-                    <Link href="/"><a className={styles.item}> Контакты</a></Link>
-                    <Link href="/"><a className={styles.item}>Наши работы</a></Link>
+                   
                 </div>
             </div>
         </div>
