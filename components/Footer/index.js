@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import styles from './Footer.module.css'
 
 const Footer = () => {
@@ -10,8 +11,16 @@ const Footer = () => {
     const [passwordDirty, setpasswordDirty] = React.useState(false)
     const [nameError, setnameError] = React.useState('имя не может быть пустым')
     const [passwordError, setpasswordError] = React.useState('пароль не может быть пустым')
-
-
+    const [formValid, setformValid]= React.useState(false)
+    useEffect(() => {
+      
+      if(nameError || passwordError) {
+          setformValid(false)
+      
+        }else{
+            setformValid(true)
+        }
+    }, [nameError, passwordError])
  
     const nameHandler =(jopa)=>{
         setname(jopa.target.value)
@@ -50,14 +59,15 @@ const Footer = () => {
     }
      return(
 
-      <div>
+      <div className={styles.forma}>
               {!authed ? <form className={styles.form}> <h1 className={styles.h1}>Ты кто ежи?</h1>
               {(nameDirty && nameError) && <div className={styles.Error}>{nameError}</div>} 
               <input className={styles.input1} onChange={jopa => nameHandler(jopa)} value={name} onBlur={jopa => blurHandler(jopa)} name='name' type='text' placeholder='Имя' ></input>
               {(passwordDirty && passwordError) && <div className={styles.Error}>{passwordError}</div>} 
               <input className={styles.input2} onChange={jopa => passwordHandler(jopa)} value={password} onBlur={jopa => blurHandler(jopa)} name='password' type='password' placeholder='Пароль' ></input> </form> : <div></div>}
-          <button className={styles.button2} onClick={authed ? () => setAuthed(false) : () => setAuthed(true)} >{authed ? <button className={styles.button1}>log out</button> : <button className={styles.button}>log in</button>}</button>
-          
+            <button className={styles.button} disabled={!formValid} onClick={authed ? () => setAuthed(false) : () => setAuthed(true)} > {authed ? <div className={styles.button1}>log out</div> : <div className={styles.button2}>log in</div>}</button>
+            
+
         
       </div>
     )

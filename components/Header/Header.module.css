@@ -52,6 +52,35 @@ color: #FFFFFF;
 .item{
  padding:15px;
 }
+@media screen and (max-width: 1187px) {
+  .leftbar{
+  
+    width: 50%;
+    
+  }
+  .leftbar2{
+    font-size: 20px;
+  }
+  .leftbar1{
+    font-size: 20px;
+  }
+  .ebuch{
+    margin-right: 4%;
+    align-self: flex-end;
+    font-size: 20px;
+    width: 21%;
+    flex-direction: column;
+  }
+  .item{
+    padding: 2px;
+    display: inline-flex;
+  }
+  
+  }
+  .bar{
+    margin-top: 8%;
+  }
+
 @media screen and (max-width: 376px) {
 
 .leftbar{

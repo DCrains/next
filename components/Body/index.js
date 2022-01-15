@@ -3,7 +3,7 @@ import styles from './Body.module.css'
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Body = () => {
-    const matches = useMediaQuery('(min-width:376px)')
+    const matches = useMediaQuery('(min-width:1069px)')
    
     return (
         <div className={styles.body}>

@@ -19,7 +19,7 @@ function HomeIcon(props) {
     );
 }
 const Header = () => {
-    const matches = useMediaQuery('(min-width:376px)')
+    const matches = useMediaQuery('(min-width:1187px)')
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
     const handleClick = (event) => {
