@@ -58,7 +58,7 @@ const Footer = () => {
         }
     }
      return(
-
+<div className={styles.Footer}>
       <div className={styles.forma}>
               {!authed ? <form className={styles.form}> <h1 className={styles.h1}>Ты кто ежи?</h1>
               {(nameDirty && nameError) && <div className={styles.Error}>{nameError}</div>} 
@@ -66,10 +66,8 @@ const Footer = () => {
               {(passwordDirty && passwordError) && <div className={styles.Error}>{passwordError}</div>} 
               <input className={styles.input2} onChange={jopa => passwordHandler(jopa)} value={password} onBlur={jopa => blurHandler(jopa)} name='password' type='password' placeholder='Пароль' ></input> </form> : <div></div>}
             <button className={styles.button} disabled={!formValid} onClick={authed ? () => setAuthed(false) : () => setAuthed(true)} > {authed ? <div className={styles.button1}>log out</div> : <div className={styles.button2}>log in</div>}</button>
-            
-
-        
-      </div>
+        </div>
+    </div>
     )
 
 }

@@ -1,3 +1,9 @@
+.Footer{
+    position: absolute;
+    width: 100%;
+    height: 31%;
+        background-color: #191B27;  
+}
 .form{
     flex-wrap: wrap;
     display: flex;
@@ -12,8 +18,7 @@
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    margin-left: 7%;
-    margin-top: 1%;
+    margin-left: 7%; 
     font-size: 16px;
 
 
@@ -89,7 +94,9 @@
     color: #212529;
     opacity: 0.4;
   }
-  .forma{
+  .forma{  
+    background-color: #191B27;
+  
       margin-left: 40% ;
   }
   @media screen and (max-width: 1279px) {

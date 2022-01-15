@@ -56,7 +56,7 @@ const Header = () => {
 
 
                         >
-                            {open ? <ClearIcon sx={{ color: pink[500] }} fontSize="large" /> : <DehazeIcon sx={{ color: pink[50] }} fontSize="large" />}
+                            {open ? <ClearIcon sx={{ color: pink[50] }} fontSize="large" /> : <DehazeIcon sx={{ color: pink[50] }} fontSize="large" />}
 
                         </Button>
                         <Menu
