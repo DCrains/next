@@ -41,7 +41,7 @@ const Header = () => {
 
                 {matches ? <div className={styles.ebuch}>
                     <Link href="/"><a className={styles.item}>Наши услуги</a></Link>
-                    <Link href="/"><a className={styles.item}>Цены</a></Link>
+                    <Link href="../price"><a className={styles.item}>Цены</a></Link>
                     <Link href="/"><a className={styles.item}> Контакты</a></Link>
                     <Link href="/"><a className={styles.item}>Наши работы</a></Link>
                 </div>
@@ -56,7 +56,7 @@ const Header = () => {
 
 
                         >
-                            {open ? <ClearIcon sx={{ color: pink[50] }} fontSize="large" /> : <DehazeIcon sx={{ color: pink[50] }} fontSize="large" />}
+                            {open ? <ClearIcon sx={{ color: '#ffffff' }} fontSize="large" /> : <DehazeIcon sx={{ color:'#ffffff' }} fontSize="large" />}
 
                         </Button>
                         <Menu

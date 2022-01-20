@@ -60,7 +60,7 @@ const Footer = () => {
      return(
 <div className={styles.Footer}>
       <div className={styles.forma}>
-              {!authed ? <form className={styles.form}> <h1 className={styles.h1}>Ты кто ежи?</h1>
+              {!authed ? <form className={styles.form}> <h1 className={styles.h1}>Вход</h1>
               {(nameDirty && nameError) && <div className={styles.Error}>{nameError}</div>} 
               <input className={styles.input1} onChange={jopa => nameHandler(jopa)} value={name} onBlur={jopa => blurHandler(jopa)} name='name' type='text' placeholder='Имя' ></input>
               {(passwordDirty && passwordError) && <div className={styles.Error}>{passwordError}</div>} 

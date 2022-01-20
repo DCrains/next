@@ -1,0 +1,33 @@
+.token1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  #191B27;
+
+}
+.p{
+    width: 500px;
+    color:  #fff;
+}
+.tokencontainer{
+    margin-left: 5px;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+}
+.tokencard{
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #191B27;
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(8, 8, 8, 0.5);
+    text-align: center;
+}
